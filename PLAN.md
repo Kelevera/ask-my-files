@@ -16,7 +16,7 @@ Each task: failing test first, then implementation, then pytest green.
   Use urllib from the standard library. Tests mock HTTP. Follow D03 for the embed endpoint.
   Accept: unit tests pass offline.
 
-- [ ] T03 Loaders. TXT and MD as UTF-8. PDF with pypdf, one segment per page, label "page N".
+- [x] T03 Loaders. TXT and MD as UTF-8. PDF with pypdf, one segment per page, label "page N".
   DOCX with python-docx, segments by Heading style, label "section <heading>".
   Each segment carries: file path, label, text.
   Accept: tests with small fixtures created in tmp_path.

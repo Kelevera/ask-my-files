@@ -46,3 +46,8 @@ Each entry: id, decision, reason. Add new entries at the bottom. Never delete ol
   installing the package. Reason: simplest setup, no build configuration needed.
 - D14 Chat requests use temperature 0 and stream false.
   Reason: repeatable answers for the eval, and one JSON reply is simpler to parse.
+
+- D15 TXT and MD files are one segment with an empty label, so their citation is the file
+  name alone. DOCX text before the first heading gets the label "section (start)". Empty
+  pages and sections are skipped. DOCX table text is not read.
+  Reason: the simplest reading of T03. Plain text has no pages or sections to point to.
