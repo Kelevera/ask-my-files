@@ -25,7 +25,7 @@ Each task: failing test first, then implementation, then pytest green.
   or section boundary. Each chunk keeps its file path and label.
   Accept: tests for overlap, boundaries and empty input.
 
-- [ ] T05 Store. SQLite at a path given by the caller. Table documents(path PK, sha256, mtime,
+- [x] T05 Store. SQLite at a path given by the caller. Table documents(path PK, sha256, mtime,
   size). Table chunks(id, path, label, text, embedding BLOB). Functions: upsert_document,
   replace_chunks, delete_document, all_chunks, document_state.
   Accept: CRUD tests on a temporary database.
