@@ -65,3 +65,7 @@ Each entry: id, decision, reason. Add new entries at the bottom. Never delete ol
   "pip install -e ." (install.ps1 does this in T13). The CLI has an optional --db argument
   (default index.sqlite in the current folder).
   Reason: "python -m askfiles" must work from any folder although the code lives in src/.
+
+- D19 eval/questions.json is committed (it is deterministic), eval/data/ is not (D08).
+  DOCX files are re-zipped with a fixed timestamp and PDFs use reportlab's invariant mode.
+  Reason: both formats embed the current time otherwise, which breaks byte-identical runs.

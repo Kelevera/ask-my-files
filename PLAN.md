@@ -51,7 +51,7 @@ Each task: failing test first, then implementation, then pytest green.
   "file, page N" or "file, section X".
   Accept: tests for argument parsing and output format.
 
-- [ ] T10 Synthetic corpus. eval/make_corpus.py, seeded with random.Random(42). Creates 25
+- [x] T10 Synthetic corpus. eval/make_corpus.py, seeded with random.Random(42). Creates 25
   documents in eval/data/ (PDF, DOCX, TXT, MD; some in subfolders; some PDFs with 3 or more
   pages). Each document has 2 to 3 planted facts of the form "The access code for Project
   <name> is <CODE>", placed on known pages or sections. Writes eval/questions.json with
