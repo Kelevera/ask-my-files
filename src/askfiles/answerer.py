@@ -51,7 +51,7 @@ def _citations(reply, chunks):
     return list(dict.fromkeys(Citation(chunk.path, chunk.label) for chunk in cited))
 
 
-def answer(connection, embed, chat, question, k=5, min_score=None):
+def answer(connection, embed, chat, question, k=config.TOP_K, min_score=None):
     """embed: list of strings -> vectors. chat: (system, user) -> reply text."""
     if min_score is None:
         min_score = config.load().min_score

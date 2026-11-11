@@ -2,6 +2,11 @@
 import os
 from dataclasses import dataclass
 
+# Pipeline defaults (D06). T14 may tune them.
+CHUNK_SIZE = 800
+CHUNK_OVERLAP = 150
+TOP_K = 5
+
 
 @dataclass(frozen=True)
 class Config:

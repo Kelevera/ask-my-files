@@ -3,7 +3,7 @@ import hashlib
 import logging
 import os
 
-from . import store
+from . import config, store
 from .chunker import chunk_segments
 from .loaders import SUPPORTED_EXTENSIONS, load_file
 
@@ -26,7 +26,8 @@ def _walk(folder):
                 yield os.path.join(directory, name)
 
 
-def index_folder(connection, folder, embed, chunk_size=800, chunk_overlap=150):
+def index_folder(connection, folder, embed, chunk_size=config.CHUNK_SIZE,
+                 chunk_overlap=config.CHUNK_OVERLAP):
     """Bring the index up to date with the folder.
 
     embed is a function: list of strings -> list of vectors.

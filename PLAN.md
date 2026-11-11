@@ -59,7 +59,7 @@ Each task: failing test first, then implementation, then pytest green.
   unanswerable (asking for codes that were never planted).
   Accept: running it twice produces byte-identical output.
 
-- [ ] T11 Eval runner. eval/run.py rebuilds eval/index.sqlite from scratch on eval/data/, runs
+- [x] T11 Eval runner. eval/run.py rebuilds eval/index.sqlite from scratch on eval/data/, runs
   every question, and computes: recall@5 (expected file in the top 5 retrieved chunks),
   citation accuracy (answer contains the expected code AND the cited file and label match),
   refusal rate (unanswerable questions refused). Writes EVAL_REPORT.md with the three numbers,
