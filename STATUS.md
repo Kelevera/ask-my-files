@@ -1,7 +1,7 @@
 STATE: IN_PROGRESS
 
-Last done: T06 Indexer.
-Next task: T07
+Last done: T07 Retriever.
+Next task: T08
 Open issues:
 - `ollama list` shows no models on this PC. T11 and T14 need qwen2.5:7b and nomic-embed-text.
   Pulling models is a download outside PyPI, which CLAUDE.md does not allow. If the models

@@ -35,7 +35,7 @@ Each task: failing test first, then implementation, then pytest green.
   added, updated, unchanged, removed.
   Accept: tests with a fake embedder, including a changed file and a deleted file.
 
-- [ ] T07 Retriever. Cosine similarity with numpy. top_k(query, k) returns chunks with scores,
+- [x] T07 Retriever. Cosine similarity with numpy. top_k(query, k) returns chunks with scores,
   highest first.
   Accept: tests with hand-made vectors.
 
