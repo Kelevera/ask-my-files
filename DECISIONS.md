@@ -93,3 +93,10 @@ Each entry: id, decision, reason. Add new entries at the bottom. Never delete ol
   because the Ollama server restarted. It produced no numbers and is not a tuning round.
   The run takes about 12 minutes on this PC.
   Reason: the gates are met, and tuning without a failing gate would only add risk.
+
+- D24 T15 checks: the clean install was tested by cloning the repo into a temporary
+  subfolder, running install.ps1 there, then the README's index and query commands on a
+  one-file folder (answered with a citation, an off-topic question was refused, a second
+  index run reported "unchanged: 1"). The subfolder was deleted afterwards. The regenerated
+  EVAL_REPORT.md is byte-identical to the T14 report (0.967 / 0.933 / 1.000).
+  Reason: the simplest check of "a clean install from the README works" inside this folder.

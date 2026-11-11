@@ -28,5 +28,15 @@ def test_gitignore_entries():
         assert required in entries
 
 
-def test_readme_exists():
-    assert (ROOT / "README.md").is_file()
+def test_readme_covers_install_usage_limits_and_eval():
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    for heading in ["## Install", "## Usage", "## Limits", "## Run the eval", "## Troubleshooting"]:
+        assert heading in readme
+    for command in [r".\install.ps1", r".\run.ps1", "ollama pull qwen2.5:7b",
+                    "ollama pull nomic-embed-text", "-m askfiles index", "-m askfiles query",
+                    "pip install -r requirements-dev.txt", "-m eval.run", "-m pytest",
+                    "http://127.0.0.1:5000"]:
+        assert command in readme, command
+    for variable in ["ASKFILES_CHAT_MODEL", "ASKFILES_EMBED_MODEL", "ASKFILES_OLLAMA_URL",
+                     "ASKFILES_MIN_SCORE"]:
+        assert variable in readme

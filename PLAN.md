@@ -81,7 +81,7 @@ Each task: failing test first, then implementation, then pytest green.
   Accept: all three gates PASS, or the three rounds are recorded and the task ends in
   STATE: BLOCKED per CLAUDE.md.
 
-- [ ] T15 Final. README: install in under 30 minutes, usage, limits, how to run the eval.
+- [x] T15 Final. README: install in under 30 minutes, usage, limits, how to run the eval.
   Full pytest run green. EVAL_REPORT.md regenerated. Set the first line of STATUS.md to
   STATE: DONE.
   Accept: a clean install from the README works, and all gates PASS.
