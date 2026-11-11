@@ -70,7 +70,7 @@ Each task: failing test first, then implementation, then pytest green.
   citation list (file name and page or section). Do not serve the files themselves.
   Accept: Flask test client tests for the page and for a query.
 
-- [ ] T13 Windows scripts. install.ps1: create .venv, pip install -r requirements.txt, check that
+- [x] T13 Windows scripts. install.ps1: create .venv, pip install -r requirements.txt, check that
   Ollama answers on the configured URL and that both models are listed. Print a clear message
   for each failed check. run.ps1: start the web UI.
   Accept: install.ps1 runs in a clean folder, and each failed check prints a readable message.

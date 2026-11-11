@@ -80,3 +80,7 @@ Each entry: id, decision, reason. Add new entries at the bottom. Never delete ol
 - D21 The web UI is one route (GET and POST /) with an inline template and no static folder.
   It reads index.sqlite in the current folder and starts with "python -m askfiles.web".
   Reason: one page needs no template files, and without a static route no file is served.
+
+- D22 install.ps1 has a -ChecksOnly switch that skips the .venv and pip steps and only checks
+  Ollama and the models. It prints one [OK] or [FAIL] line per check and exits with 1 when a
+  check failed. Reason: the checks can be tested offline and re-run after pulling a model.
