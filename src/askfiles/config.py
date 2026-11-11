@@ -8,6 +8,7 @@ class Config:
     chat_model: str
     embed_model: str
     ollama_url: str
+    min_score: float
 
 
 def load(env=None):
@@ -17,4 +18,5 @@ def load(env=None):
         chat_model=env.get("ASKFILES_CHAT_MODEL", "qwen2.5:7b"),
         embed_model=env.get("ASKFILES_EMBED_MODEL", "nomic-embed-text"),
         ollama_url=env.get("ASKFILES_OLLAMA_URL", "http://localhost:11434").rstrip("/"),
+        min_score=float(env.get("ASKFILES_MIN_SCORE", "0.35")),
     )

@@ -39,7 +39,7 @@ Each task: failing test first, then implementation, then pytest green.
   highest first.
   Accept: tests with hand-made vectors.
 
-- [ ] T08 Answerer. Build a prompt with numbered sources [1]..[k]. The system prompt says:
+- [x] T08 Answerer. Build a prompt with numbered sources [1]..[k]. The system prompt says:
   answer only from the sources, cite them as [n], and if the answer is not in the sources,
   reply exactly NOT_IN_DOCUMENTS. Refuse without calling the model when the top score is below
   ASKFILES_MIN_SCORE (default 0.35). Citations are the sources the answer cites. If none are

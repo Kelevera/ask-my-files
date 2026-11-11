@@ -56,3 +56,7 @@ Each entry: id, decision, reason. Add new entries at the bottom. Never delete ol
   exists on disk. A file that cannot be parsed is logged, counted as "failed" (a fifth
   count next to the four in T06) and skipped.
   Reason: several folders can share one index, and one broken PDF must not stop the run.
+
+- D17 A model reply that contains NOT_IN_DOCUMENTS anywhere counts as a refusal. A refusal
+  returns a fixed message and no citations. Only [n] numbers that match a source count as
+  citations. Reason: small models often add punctuation or a citation to the marker.
