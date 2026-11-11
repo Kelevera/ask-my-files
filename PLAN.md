@@ -66,7 +66,7 @@ Each task: failing test first, then implementation, then pytest green.
   PASS/FAIL per gate, and a table of failing cases. Command: python -m eval.run.
   Accept: runs end to end, and EVAL_REPORT.md contains all required sections.
 
-- [ ] T12 Web UI. Flask app bound to 127.0.0.1:5000. A question box, the answer, and a
+- [x] T12 Web UI. Flask app bound to 127.0.0.1:5000. A question box, the answer, and a
   citation list (file name and page or section). Do not serve the files themselves.
   Accept: Flask test client tests for the page and for a query.
 

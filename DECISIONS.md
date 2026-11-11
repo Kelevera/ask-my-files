@@ -76,3 +76,7 @@ Each entry: id, decision, reason. Add new entries at the bottom. Never delete ol
   also regenerates the corpus and exits with 0 (all gates pass), 1 (a gate fails) or 2
   (Ollama not usable). Chunk size, overlap and top k are constants in askfiles/config.py,
   so that T14 tunes the real defaults. Reason: the simplest reading of T11 and BRIEF.md.
+
+- D21 The web UI is one route (GET and POST /) with an inline template and no static folder.
+  It reads index.sqlite in the current folder and starts with "python -m askfiles.web".
+  Reason: one page needs no template files, and without a static route no file is served.
