@@ -84,3 +84,12 @@ Each entry: id, decision, reason. Add new entries at the bottom. Never delete ol
 - D22 install.ps1 has a -ChecksOnly switch that skips the .venv and pip steps and only checks
   Ollama and the models. It prints one [OK] or [FAIL] line per check and exits with 1 when a
   check failed. Reason: the checks can be tested offline and re-run after pulling a model.
+
+- D23 T14 result: the first complete eval run with the starting settings (chunk size 800,
+  overlap 150, top k 5, min score 0.35, qwen2.5:7b, nomic-embed-text) passed all gates:
+  recall@5 0.967, citation accuracy 0.933, refusal rate 1.000. No tuning round was used and
+  no setting was changed. Two cases failed: Q09 (right code, wrong source cited) and Q12
+  (file not retrieved, so the answer was refused). An earlier run stopped after 4 questions
+  because the Ollama server restarted. It produced no numbers and is not a tuning round.
+  The run takes about 12 minutes on this PC.
+  Reason: the gates are met, and tuning without a failing gate would only add risk.

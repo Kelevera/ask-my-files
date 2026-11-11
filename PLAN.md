@@ -75,7 +75,7 @@ Each task: failing test first, then implementation, then pytest green.
   for each failed check. run.ps1: start the web UI.
   Accept: install.ps1 runs in a clean folder, and each failed check prints a readable message.
 
-- [ ] T14 Tune and measure. Run python -m eval.run. If a gate fails, adjust chunk size
+- [x] T14 Tune and measure. Run python -m eval.run. If a gate fails, adjust chunk size
   (600 to 1200 characters), top_k (5 to 8), ASKFILES_MIN_SCORE, or the prompt. At most
   three tuning rounds. Record each round in DECISIONS.md with the numbers before and after.
   Accept: all three gates PASS, or the three rounds are recorded and the task ends in
