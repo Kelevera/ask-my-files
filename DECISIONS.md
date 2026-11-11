@@ -37,3 +37,10 @@ Each entry: id, decision, reason. Add new entries at the bottom. Never delete ol
 
 - D11 Default chat model: qwen2.5:7b. Override with ASKFILES_CHAT_MODEL.
   Reason: fits a typical 16 GB machine. The user may choose another model.
+
+- D12 Use Python 3.11 for the .venv instead of 3.12 (changes D01). Code stays compatible
+  with 3.11 and newer. Reason: only Python 3.11.9 is installed on this PC, and installing
+  another Python is a system change that CLAUDE.md forbids.
+
+- D13 pytest.ini sets pythonpath to "src" and "." so tests import askfiles and eval without
+  installing the package. Reason: simplest setup, no build configuration needed.

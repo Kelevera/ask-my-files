@@ -3,7 +3,7 @@
 Work top to bottom. One task = one commit. Tick a task with [x] when its acceptance passes.
 Each task: failing test first, then implementation, then pytest green.
 
-- [ ] T01 Project skeleton. requirements.txt (pinned): pypdf, python-docx, numpy, flask.
+- [x] T01 Project skeleton. requirements.txt (pinned): pypdf, python-docx, numpy, flask.
   requirements-dev.txt (pinned): pytest, reportlab (used only by the eval corpus generator).
   Package folder src/askfiles/ with __init__.py and __main__.py. tests/ folder with a pytest
   config. .gitignore must include: .venv/, __pycache__/, index.sqlite, eval/index.sqlite,

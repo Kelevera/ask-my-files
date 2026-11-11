@@ -2,4 +2,7 @@ run.log
 .venv/
 __pycache__/
 *.sqlite
+index.sqlite
+eval/index.sqlite
 eval/data/
+.pytest_cache/
