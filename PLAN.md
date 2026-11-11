@@ -10,7 +10,7 @@ Each task: failing test first, then implementation, then pytest green.
   eval/data/, run.log. README.md stub.
   Accept: pytest runs without errors.
 
-- [ ] T02 Config and Ollama client. Read ASKFILES_CHAT_MODEL (default qwen2.5:7b),
+- [x] T02 Config and Ollama client. Read ASKFILES_CHAT_MODEL (default qwen2.5:7b),
   ASKFILES_EMBED_MODEL (default nomic-embed-text), ASKFILES_OLLAMA_URL (default
   http://localhost:11434). Client methods: health(), embed(list of strings), chat(system, user).
   Use urllib from the standard library. Tests mock HTTP. Follow D03 for the embed endpoint.

@@ -44,3 +44,5 @@ Each entry: id, decision, reason. Add new entries at the bottom. Never delete ol
 
 - D13 pytest.ini sets pythonpath to "src" and "." so tests import askfiles and eval without
   installing the package. Reason: simplest setup, no build configuration needed.
+- D14 Chat requests use temperature 0 and stream false.
+  Reason: repeatable answers for the eval, and one JSON reply is simpler to parse.

@@ -1,7 +1,7 @@
 STATE: IN_PROGRESS
 
-Last done: T01 Project skeleton (also SPEC.md and ARCHITECTURE.md created).
-Next task: T02
+Last done: T02 Config and Ollama client.
+Next task: T03
 Open issues:
 - `ollama list` shows no models on this PC. T11 and T14 need qwen2.5:7b and nomic-embed-text.
   Pulling models is a download outside PyPI, which CLAUDE.md does not allow. If the models
