@@ -51,3 +51,8 @@ Each entry: id, decision, reason. Add new entries at the bottom. Never delete ol
   name alone. DOCX text before the first heading gets the label "section (start)". Empty
   pages and sections are skipped. DOCX table text is not read.
   Reason: the simplest reading of T03. Plain text has no pages or sections to point to.
+
+- D16 The index stores absolute file paths. A document is removed when its file no longer
+  exists on disk. A file that cannot be parsed is logged, counted as "failed" (a fifth
+  count next to the four in T06) and skipped.
+  Reason: several folders can share one index, and one broken PDF must not stop the run.

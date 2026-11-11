@@ -30,7 +30,7 @@ Each task: failing test first, then implementation, then pytest green.
   replace_chunks, delete_document, all_chunks, document_state.
   Accept: CRUD tests on a temporary database.
 
-- [ ] T06 Indexer. Walk a folder recursively for .pdf .docx .txt .md. Skip files whose sha256
+- [x] T06 Indexer. Walk a folder recursively for .pdf .docx .txt .md. Skip files whose sha256
   is unchanged. Re-embed changed files. Remove documents that no longer exist. Return counts:
   added, updated, unchanged, removed.
   Accept: tests with a fake embedder, including a changed file and a deleted file.
