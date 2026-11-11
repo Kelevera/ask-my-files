@@ -60,3 +60,8 @@ Each entry: id, decision, reason. Add new entries at the bottom. Never delete ol
 - D17 A model reply that contains NOT_IN_DOCUMENTS anywhere counts as a refusal. A refusal
   returns a fixed message and no citations. Only [n] numbers that match a source count as
   citations. Reason: small models often add punctuation or a citation to the marker.
+
+- D18 pyproject.toml makes the package installable, and the .venv gets it with
+  "pip install -e ." (install.ps1 does this in T13). The CLI has an optional --db argument
+  (default index.sqlite in the current folder).
+  Reason: "python -m askfiles" must work from any folder although the code lives in src/.

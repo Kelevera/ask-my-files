@@ -46,7 +46,7 @@ Each task: failing test first, then implementation, then pytest green.
   cited, cite the top 2. The response includes answer, citations (file and label) and scores.
   Accept: tests with a fake chat client, covering refusal by score and by model reply.
 
-- [ ] T09 CLI. `python -m askfiles index <folder>` prints the index counts.
+- [x] T09 CLI. `python -m askfiles index <folder>` prints the index counts.
   `python -m askfiles query "<question>"` prints the answer and the citations as
   "file, page N" or "file, section X".
   Accept: tests for argument parsing and output format.

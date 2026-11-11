@@ -6,3 +6,4 @@ index.sqlite
 eval/index.sqlite
 eval/data/
 .pytest_cache/
+*.egg-info/
