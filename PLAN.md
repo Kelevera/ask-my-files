@@ -21,7 +21,7 @@ Each task: failing test first, then implementation, then pytest green.
   Each segment carries: file path, label, text.
   Accept: tests with small fixtures created in tmp_path.
 
-- [ ] T04 Chunker. About 800 characters per chunk, 150 characters overlap. Never cross a page
+- [x] T04 Chunker. About 800 characters per chunk, 150 characters overlap. Never cross a page
   or section boundary. Each chunk keeps its file path and label.
   Accept: tests for overlap, boundaries and empty input.
 
